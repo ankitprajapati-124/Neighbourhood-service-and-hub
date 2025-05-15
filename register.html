@@ -1,34 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Neighborhood Help & Sevice Hub</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/styles.css">
-<script src="/script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Neighborhood Help & Service Hub</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
-        <div class="register-box">
-            <h2>Register</h2>
-            <form id="registerForm">
-                <div class="input-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="input-group">
-                    <label for="regMobile">Mobile Number</label>
-                    <input type="tel" id="regMobile" placeholder="Enter your mobile number" required>
-                </div>
-                <div class="input-group">
-                    <label for="regPassword">Password</label>
-                    <input type="password" id="regPassword" placeholder="Create a password" required>
-                </div>
-                <button type="submit" class="btn">Register</button>
-            </form>
-            <a href="login.html">⬅ Back to login</a>
+  <div class="hero_area">
+  <!-- Header Section -->
+  <header class="header_section">
+    <div class="header_top">
+      <div class="container-fluid">
+        <div class="contact_nav">
+          <a href="#"><i class="fa fa-phone"></i> <span>Call : +91 7807192771, +91 8881190368</span></a>
+          <a href="#"><i class="fa fa-envelope"></i> <span>Email : vermaakhil788@gmail.com, 124ankitprajapati@gmail.com</span></a>
         </div>
+      </div>
     </div>
+    <div class="header_bottom">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html"><span>Neighborhood Help & Service Hub</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+              <li class="nav-item active"><a class="nav-link" href="login.html">Login/Signup</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- Register Form -->
+  <body style="background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background: #d1e3ff; padding: 30px 40px; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); max-width: 400px; width: 100%; text-align: center;">
+      <h2 style="margin-bottom: 25px; font-weight: 600; color: #333;">Register</h2>
+      <form id="registerForm">
+        <div style="margin-bottom: 20px; text-align: left;">
+          <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required
+                 style="width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
+        </div>
+        <div style="margin-bottom: 20px; text-align: left;">
+          <label for="mobile" style="display: block; margin-bottom: 8px; font-weight: 500;">Mobile Number</label>
+          <input type="tel" id="mobile" placeholder="Enter your mobile number" required
+                 style="width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
+        </div>
+        <div style="margin-bottom: 20px; text-align: left; position: relative;">
+          <label for="password" style="display: block; margin-bottom: 8px; font-weight: 500;">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required
+                 style="width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
+          <span onclick="togglePassword()" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 18px;">👁️</span>
+        </div>
+        <button type="submit"
+                style="background-color: #003d66; color: white; border: none; padding: 10px 25px; font-size: 16px; border-radius: 8px; cursor: pointer;">
+          Register
+        </button>
+      </form>
+      <div style="margin-top: 15px; font-size: 14px;">
+        <p>Already have an account? <a href="login.html" style="color: #4a148c; text-decoration: none;">Login Here</a></p>
+      </div>
+      <a href="index.html" style="margin-top: 10px; font-size: 14px; display: block; color: #4a148c; text-decoration: none;">⬅ Back to Home</a>
+    </div>
+  </div>
+  <!-- Info Section -->
+  <section class="info_section ">
+    <div class="container">
+      <h4>Get In Touch</h4>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="info_items">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="#"><div class="item "><div class="img-box "><i class="fa fa-map-marker"></i></div><p>New Dashmesh Nagar Amritsar 143001</p></div></a>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><div class="item "><div class="img-box "><i class="fa fa-phone"></i></div><p>+91 7807192771, +91 8881190368</p></div></a>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><div class="item "><div class="img-box"><i class="fa fa-envelope"></i></div><p>vermaakhil788@gmail.com, 124ankitprajapati@gmail.com</p></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-box">
+      <h4>Follow Us</h4>
+      <div class="box">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/ig_akhil_788?igsh=MTZoYzA2MGI3NmVqaw==" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayDateYear"></span> All Rights Reserved By Ankit Prajapati</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+      passwordInput.setAttribute("type", type);
+    }
+    document.getElementById("displayDateYear").textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
